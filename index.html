@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoLab</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+</head>
+<body>
+    <header class="hero" id="hero">
+        <h1>Welcome to AlgoLab</h1>
+        <p>Run classic algorithms instantly – Reverse Numbers, Fibonacci, Factorial, and more!</p>
+        <a href="#algo" class="click">Start Exploring</a>
+
+        <button onmouseover="showMenu()"><span class="material-symbols-outlined" id="open">menu</span></button>
+        <button onmouseover="closeMenu()"><span class="material-symbols-outlined" id="close">close</span></button>
+        <nav id="menu">
+            <a href="#hero">Home</a>
+            <a href="#algo">Algorithms</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+<hr>
+    <main>
+        <section id="algo">
+            <h1>Algorithms</h1>
+            <div class="algo-container">
+                <div>
+                    <h2>Reverse a number </h2>
+                </div>
+                <div>
+                    <h2>Factorial of a number </h2>
+                </div>
+                <div>
+                    <h2>Fibonacci Sequence </h2>
+                </div>
+                <div>
+                    <h2>Prime Checker </h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+    <div id="dialog-box" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="close-dialog" class="material-symbols-outlined">close</span>
+            <h2 id="dialog-title">Algorithm</h2>
+            <input type="number" id="user-input" placeholder="Enter a number">
+            <button onclick="runAlgorithm()">Run</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
